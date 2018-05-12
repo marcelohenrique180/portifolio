@@ -7,7 +7,7 @@ import './Items.css'
 class Items extends Component {
   render () {
     return (
-      <div>
+      <div className="items">
         <ItemWrapper
           render={
             ({ showDetails }) => (
