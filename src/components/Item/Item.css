@@ -1,6 +1,10 @@
 .item {
+  padding: .5em;
   width: 13em;
+  height: 13em;
   text-align: center;
+  background-color: #0000001a;
+  margin: .2em;
 }
 
 .item__img {
