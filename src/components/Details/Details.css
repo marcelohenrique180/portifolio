@@ -19,7 +19,7 @@
 }
 
 .details__box {
-  background-color: hsla(208, 45%, 12%, 0.6);
+  background-color: hsla(208, 45%, 12%, 0.9);
   z-index: 2;
   height: 100%;
   padding: 1em;

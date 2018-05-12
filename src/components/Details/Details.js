@@ -9,7 +9,7 @@ export const DetailsConsumer = DetailsContext.Consumer
 
 export class DetailsProvider extends Component {
   state = {
-    displayDetails: true,
+    displayDetails: false,
     innerDetails: <div />,
     toggleDetails: () => this.setState({ displayDetails: !this.state.displayDetails }),
     setInnerDetails: innerDetails => this.setState({ innerDetails: innerDetails })

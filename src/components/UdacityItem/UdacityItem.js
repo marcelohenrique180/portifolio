@@ -16,7 +16,18 @@ class UdacityDetails extends Component {
           title="Model Evaluation & Validation"
           text="O objetivo desse projeto foi de avaliar o desempenho e o poder de estimativa de um modelo que foi treinado e testado em dados coletados dos imóveis dos subúrbios de Boston, Massachusetts."
           link="https://github.com/marcelohenrique180/machine-learning-nanodegree/blob/master/boston_housing/boston_housing_PT.ipynb"
-          date="12/12/1212"
+        />
+        <Detail
+          img={p2}
+          title="Sistema de Intervenção para Estudantes"
+          text="O objetivo desse projeto é identificar estudantes que possam precisar de intervenção antecipada antes de serem reprovados."
+          link="https://github.com/marcelohenrique180/machine-learning-nanodegree/blob/master/student_intervention/student_intervention_PT.ipynb"
+        />
+        <Detail
+          img={p3}
+          title="Segmentos de Clientela"
+          text="O objetivo desse projeto foi de avaliar o desempenho e o poder de estimativa de um modelo que foi treinado e testado em dados coletados dos imóveis dos subúrbios de Boston, Massachusetts."
+          link="https://github.com/marcelohenrique180/machine-learning-nanodegree/blob/master/customer_segments/customer_segments_PT.ipynb"
         />
       </div>
     )
