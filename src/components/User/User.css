@@ -5,4 +5,5 @@
 .user__pic {
   width: 100%;
   border-radius: 50%;
+  margin-top: 10vh;
 }
