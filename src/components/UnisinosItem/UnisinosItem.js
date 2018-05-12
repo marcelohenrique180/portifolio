@@ -5,6 +5,6 @@ import uniimg from './uni.gif'
 
 export default ({ showDetails }) => (
   <div onClick={() => { showDetails("Unisinos") }}>
-    <Item title="Iniciação Científica" img={uniimg} date="hoje" />
+    <Item title="Iniciação Científica" img={uniimg} date="Atual" />
   </div>
 )
