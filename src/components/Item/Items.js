@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import ItemWrapper from './ItemWrapper'
 import UnisinosItem from '../UnisinosItem/UnisinosItem'
 import UdacityItem from '../UdacityItem/UdacityItem'
+import AsavItem from '../AsavItem/AsavItem'
+import IFSulItem from '../IFSulItem/IFSulItem'
 import './Items.css'
 
 class Items extends Component {
@@ -22,7 +24,20 @@ class Items extends Component {
             )
           }
         ></ItemWrapper>
-
+        <ItemWrapper
+          render={
+            ({ showDetails }) => (
+              <IFSulItem showDetails={showDetails} />
+            )
+          }
+        ></ItemWrapper>
+        <ItemWrapper
+          render={
+            ({ showDetails }) => (
+              <AsavItem showDetails={showDetails} />
+            )
+          }
+        ></ItemWrapper>
       </div>
     )
   }
