@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ItemWrapper from './ItemWrapper'
-import UnisinosItem from '../Unisinos/UnisinosItem'
+import UnisinosItem from '../UnisinosItem/UnisinosItem'
+import UdacityItem from '../UdacityItem/UdacityItem'
 import './Items.css'
 
 class Items extends Component {
@@ -14,6 +15,14 @@ class Items extends Component {
             )
           }
         ></ItemWrapper>
+        <ItemWrapper
+          render={
+            ({ showDetails }) => (
+              <UdacityItem showDetails={showDetails} />
+            )
+          }
+        ></ItemWrapper>
+
       </div>
     )
   }
