@@ -9,7 +9,7 @@ export const DetailsConsumer = DetailsContext.Consumer
 
 export class DetailsProvider extends Component {
   state = {
-    innerDetails: '',
+    innerDetails: (<h1>Default</h1>),
     setInnerDetails: innerDetails => this.setState({ innerDetails: innerDetails })
   }
 
@@ -30,8 +30,10 @@ export default class Details extends Component {
         {(context) => (
           <div className="details">
             <div className="details__box">
-              <span className="details__close">X</span>
-              {context.innerDetails}
+              <button className="details__close">Fechar</button>
+              <section className="details__inner_content">
+                {context.innerDetails}
+              </section>
             </div>
           </div>
         )}
