@@ -1,0 +1,8 @@
+.item {
+  width: 13em;
+  text-align: center;
+}
+
+.item__img {
+  width: 8em;
+}
