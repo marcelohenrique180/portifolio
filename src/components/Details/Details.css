@@ -1,0 +1,27 @@
+.details {
+  padding: 3em;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: hsla(208, 45%, 28%, 0.6);
+}
+
+.details__box {
+  background-color: hsla(208, 45%, 12%, 0.6);
+  height: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.details__close {
+  color: hsla(208, 45%, 8%);
+  font-size: 2em;
+  padding: .3em;
+  font-weight: bold;
+  cursor: pointer;
+}

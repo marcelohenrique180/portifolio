@@ -1,22 +1,22 @@
 import React, { Component } from 'react'
+import { DetailsConsumer } from '../Details/Details'
 
 export default class ItemWrapper extends Component {
-  
+
   showDetails = dt => {
-    console.log('showing details for:', dt)
   }
 
-  render() {
+  render () {
     const { render } = this.props
 
     return (
-      <div>
-        {
+      <DetailsConsumer>
+        {(context) =>
           render({
-            showDetails: this.showDetails
+            showDetails: context.setInnerDetails
           })
         }
-      </div>
+      </DetailsConsumer>
     )
   }
 }
