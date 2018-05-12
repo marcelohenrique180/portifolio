@@ -5,6 +5,12 @@
   text-align: center;
   background-color: #0000001a;
   margin: .2em;
+  transition: background-color;
+  transition-duration: .2s;
+}
+
+.item:hover {
+  background-color: #ffffff1a;
 }
 
 .item__img {
