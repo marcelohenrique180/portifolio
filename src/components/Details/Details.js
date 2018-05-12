@@ -9,7 +9,9 @@ export const DetailsConsumer = DetailsContext.Consumer
 
 export class DetailsProvider extends Component {
   state = {
-    innerDetails: (<h1>Default</h1>),
+    displayDetails: true,
+    innerDetails: <div />,
+    toggleDetails: () => this.setState({displayDetails: !this.state.displayDetails}),
     setInnerDetails: innerDetails => this.setState({ innerDetails: innerDetails })
   }
 
@@ -28,14 +30,16 @@ export default class Details extends Component {
     return ReactDOM.createPortal(
       <DetailsContext.Consumer>
         {(context) => (
-          <div className="details">
+          context.displayDetails ?
+          <div onClick={context.toggleDetails} className="details">
             <div className="details__box">
-              <button className="details__close">Fechar</button>
+              <button onClick={context.toggleDetails} className="details__close">Fechar</button>
               <section className="details__inner_content">
                 {context.innerDetails}
               </section>
             </div>
           </div>
+          : <React.Fragment />
         )}
       </DetailsContext.Consumer>,
       document.getElementById('details')

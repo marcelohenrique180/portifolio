@@ -13,7 +13,10 @@ export default class ItemWrapper extends Component {
       <DetailsConsumer>
         {(context) =>
           render({
-            showDetails: context.setInnerDetails
+            showDetails: details => {
+              context.setInnerDetails(details)
+              context.toggleDetails()
+            }
           })
         }
       </DetailsConsumer>
