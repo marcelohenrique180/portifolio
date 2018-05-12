@@ -7,6 +7,7 @@
   margin: .2em;
   transition: background-color;
   transition-duration: .2s;
+  cursor: pointer;
 }
 
 .item:hover {
