@@ -15,6 +15,18 @@ class IFSulDetails extends Component {
           text={<span>Esse projeto ainda não foi implementado no câmpus!<br />As tecnologias utilizadas foram React/Redux/Flow, Java com Spring Boot</span>}
           link="https://github.com/marcelohenrique180/ifsul-system/tree/develop"
         />
+        <Detail
+          img={img}
+          title="Monitoria"
+          text="Fui monitor de Algoritmos e Linguagem de Programação."
+          date="Jun 2017"
+        />
+        <Detail
+          img={img}
+          title="Bolsista"
+          text="Realizei o desenvolvimento do sistema para o projeto de extensão SaberTec."
+          date="Mai 2017"
+        />
       </div>
     )
   }

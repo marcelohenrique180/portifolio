@@ -17,6 +17,8 @@
 }
 
 .detail__img {
-  width: 200px;
+  max-width: 200px;
+  height: 140px;
+  margin: 0 auto;
   grid-row: span 3;
 }
