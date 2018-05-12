@@ -1,7 +1,7 @@
 import React from 'react'
 import Item from '../Item/Item'
 
-import img from './uni.gif'
+import img from './uni.png'
 
 export default ({ showDetails }) => (
   <div onClick={() => { showDetails("Unisinos") }}>
