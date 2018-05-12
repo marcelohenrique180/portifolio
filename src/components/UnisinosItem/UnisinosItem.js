@@ -1,10 +1,10 @@
 import React from 'react'
 import Item from '../Item/Item'
 
-import uniimg from './uni.gif'
+import img from './uni.gif'
 
 export default ({ showDetails }) => (
   <div onClick={() => { showDetails("Unisinos") }}>
-    <Item title="Iniciação Científica" img={uniimg} date="Atual" />
+    <Item title="Iniciação Científica" img={img} date="Atual" />
   </div>
 )
