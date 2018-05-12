@@ -3,9 +3,6 @@ import { DetailsConsumer } from '../Details/Details'
 
 export default class ItemWrapper extends Component {
 
-  showDetails = dt => {
-  }
-
   render () {
     const { render } = this.props
 
