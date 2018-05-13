@@ -51,5 +51,11 @@
 @media(max-width: 500px) {
   .details {
     padding: 0;
+    overflow-y: scroll;
+  }
+
+  .details__box {
+    min-height: 100%;
+    height: auto;
   }
 }

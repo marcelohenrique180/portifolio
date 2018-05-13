@@ -22,3 +22,9 @@
   margin: 0 auto;
   grid-row: span 3;
 }
+
+@media(max-width: 500px) {
+  .detail {
+    display: inline;
+  }
+}
