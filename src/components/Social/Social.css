@@ -4,11 +4,24 @@
   justify-content: flex-end;
 }
 
+.sociald {
+  list-style: none;
+}
+
+.sociald__item {
+  display: flex;
+  align-items: center;
+}
+
+.sociald__item span {
+  margin-left: 1em;
+}
+
 .social__text {
-  margin: .5em;
+  margin: .8em;
   color: hsla(0, 0%, 100%, 0.9);
   font-size: 1.2em;
-  padding: .3em;
+  padding: .5em;
   font-weight: bold;
   cursor: pointer;
   width: fit-content;
@@ -16,4 +29,31 @@
   border-radius: 5px;
   border: none;
   background-color: hsla(208, 46%, 24%, 1);
+}
+
+.fa {
+  padding: .2em;
+  color: white;
+  font-size: 2em;
+  width: 1.1em;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 5px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-github {
+  background-color: black;
+}
+
+.fa-linkedin {
+  background-color: #1977b5;
+}
+
+.fa-google {
+  background-color: #3b5bdc;
 }
